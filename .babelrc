@@ -1,0 +1,9 @@
+{
+  "presets": [
+    "@babel/preset-env"
+  ],
+  "browserslist": [
+     "last 2 Chrome versions",
+     "IE 11"
+  ],
+}
