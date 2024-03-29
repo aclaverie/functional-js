@@ -164,24 +164,26 @@ display(counterResult2());
 //This is because the counter variable is stored in the closure
 //and is not reinitialized every time the function is called
 
-//My personal creative examples of Closures
+//My personal creative examples of a Closure
+//Outer function
 const bookshelf = () => {
   // outer function variable
   const booklist = [];
   //inner function
   const addBook = (book) => {
     booklist.push(book);
-    // booklist.forEach((b) => display(b));
   }
 
   //return inner function
   return {
     //wrapper function to access inner function
     shelf1(abook){
+      //call inner function
       addBook(abook);
     },
     //wrapper function to access inner outer function variable
     value() {
+      //call outer function variable
       return booklist;
     },
   };
